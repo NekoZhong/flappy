@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+#bg{
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#bar{
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    width: 800px;
+    animation:scroll 2s linear infinite;    
+}
+@keyframes scroll{
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform:translateX(-400px);
+    }
+}
+
+
+/* 第一页 */
+
+
+#firstPage img{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -95px;
+}
+#start{
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    width: 173px;
+    height: 100px;
+    margin-left: -86px;
+    background: url(./images/start.png) no-repeat;
+    background-position: 0 0;
+}
+
+
+/* 飞翔的小鸟 */
+
+#flyBird{
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    width: 36px;
+    height:27px;
+    margin-left: -18px;
+    z-index: 2;    
+    animation: flying .5s infinite linear;
+}
+@keyframes flying{
+    0%{
+    background: url(./images/birds_01.png) no-repeat;
+    }
+    50%{
+    background: url(./images/birds_02.png) no-repeat;
+    }
+    100%{
+    background: url(./images/birds_03.png) no-repeat;
+    }
+}
+
+#pipe{
+    position: relative;
+}
+.topG{
+    position: absolute;
+    top: 0;
+    width: 50px;
+    background: url(./images/middle.png);
+    left: 1000px;
+}
+.bottomG{
+    position: absolute;
+    bottom: 0;    
+    width: 50px;
+    background: url(./images/middle.png);
+    left: 1000px;
+}
+.topG img{
+    position: absolute;
+    bottom: 0;
+}
+
+#score{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    font-size: 50px;
+    font-family: fantasy;
+    color: aliceblue;
+    z-index: 99;
+
+}
+
+#lose{
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    width: 349px;
+    height: 164px;
+    margin-left: -127px;
+    background: url(./images/notice.png) no-repeat;
+    background-size: 278px 190px;
+    display: none;
+    z-index: 999;
+}
+#lastscore{
+    position: absolute;
+    top: 29%;
+    left: 37%;
+    font-size: 20px;
+    
+}
+
+#highestscore{
+    position: absolute;
+    top: 66%;
+    left: 37%;
+    font-size: 20px;
+}

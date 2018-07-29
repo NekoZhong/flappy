@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <img src="./images/background.gif" id="bg">
+        <img src="./images/scrollBar.png" id="bar"> 
+        <div id="firstPage">
+            <img src="./images/flappy.gif">
+            <div id="start"></div>
+        </div>
+        <div><span id="score"></span></div>
+        <div id="flyBird"></div>
+        <div id="pipe"></div>
+        <div id="lose">
+            <span id="lastscore">0</span>
+            <span id="highestscore">0</span>
+        </div>
+        <audio id="wing" src="./sounds/sfx_wing.ogg"></audio>
+        <audio id="die" src="./sounds/sfx_die.ogg"></audio>
+        <audio id="swoshing" src="./sounds/sfx_swooshing.ogg"></audio>
+        <audio id="point" src="./sounds/sfx_point.ogg"></audio>
+        <audio id="hit" src="./sounds/sfx_hit.ogg"></audio>        
+    </div>
+    
+    
+    <script src="./index.js"></script>
+</body>
+</html>
